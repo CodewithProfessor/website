@@ -1,0 +1,100 @@
+/* Error Section */
+.error-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 46, 0.6));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Error Header */
+.error-section header {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #00ffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    margin-bottom: 2rem;
+}
+
+/* Error Container */
+.error-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    text-align: center;
+}
+
+/* Headings */
+.error-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #00ffff;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Paragraphs */
+.error-section p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    color: #ffffff;
+    line-height: 1.6;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+/* Return Button */
+.error-section .button {
+    display: inline-block;
+    padding: clamp(10px, 2vw, 15px) clamp(20px, 4vw, 30px);
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: #ffffff;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.error-section .button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+}
+
+.error-section .button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-section {
+        padding: 4rem 1.5rem;
+    }
+    .error-section .container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .error-section {
+        padding: 3rem 1rem;
+    }
+    .error-section .container {
+        padding: 1rem;
+    }
+    .error-section h2 {
+        font-size: clamp(1.2rem, 3vw, 1.5rem);
+    }
+}
