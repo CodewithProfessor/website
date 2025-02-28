@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Galaxy Chat Bots for support, inquiries, or feedback about our AI chatbot solutions.">
+    <meta name="keywords" content="contact, Galaxy Chat Bots, AI chatbots, support, feedback">
+    <title>Contact - Galaxy Chat Bots</title>
+    <link rel="stylesheet" href="main/styles/global.css" media="screen">
+    <link rel="stylesheet" href="main/styles/header.css" media="screen">
+    <link rel="stylesheet" href="main/styles/forms.css" media="screen">
+</head>
+<body>
+    <header id="header" role="banner">
+        <a href="/" class="logo-group" aria-label="Galaxy Chat Bots Home">
+            <img src="assets/logo.png" alt="Galaxy Chat Bots Logo" class="logo-icon" loading="lazy">
+            <span class="logo-text">Galaxy Chat Bots</span>
+        </a>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+            <ul role="menubar">
+                <li><a href="/index.html" role="menuitem">Home</a></li>
+                <li><a href="/about.html" role="menuitem">About</a></li>
+                <li><a href="/blog.html" role="menuitem">Blog</a></li>
+                <li><a href="/contact.html" role="menuitem">Contact</a></li>
+                <li><a href="/profile.html" role="menuitem">Profile</a></li>
+                <li><a href="/signup.html" role="menuitem">Signup</a></li>
+                <li><a href="/login.html" role="menuitem">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section class="contact-section">
+            <div class="container">
+                <header>Contact Us</header>
+                <h2>Get in Touch</h2>
+                <p>Have questions or feedback? Fill out the form below or email us at <a href="mailto:support@galaxychatbots.com">support@galaxychatbots.com</a>.</p>
+                <form action="/api/contact" method="POST" role="form" aria-labelledby="contact-header">
+                    <div class="field name-field">
+                        <div class="input-field">
+                            <input type="text" placeholder="Your Name" class="name" required aria-label="Name">
+                        </div>
+                    </div>
+                    <div class="field email-field">
+                        <div class="input-field">
+                            <input type="email" placeholder="Your Email" class="email" required aria-label="Email">
+                        </div>
+                    </div>
+                    <div class="field message-field">
+                        <div class="input-field">
+                            <textarea placeholder="Your Message" class="message" required aria-label="Message" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Send Message" aria-label="Submit contact form">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
