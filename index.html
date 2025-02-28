@@ -8,6 +8,13 @@
     <meta name="author" content="CodewithProfessor">
     <meta name="robots" content="index, follow">
     <title>Galaxy Chat Bots - AI-Powered Chatbot Solutions</title>
+    
+    <!-- Preloading essential assets -->
+    <link rel="preload" href="main/styles/global.css" as="style">
+    <link rel="preload" href="main/scripts/loading.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" as="style">
+    
+    <!-- Stylesheets -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="main/styles/global.css" media="screen">
     <link rel="stylesheet" href="main/styles/loading.css" media="screen">
@@ -28,8 +35,10 @@
         <canvas id="starCanvas" aria-hidden="true"></canvas>
         <canvas id="particleCanvas" aria-hidden="true"></canvas>
     </main>
-    <script src="main/scripts/starfield.js" defer></script>
-    <script src="main/scripts/particles.js" defer></script>
+    
+    <!-- Scripts with defer for better performance -->
+    <script src="main/scripts/starfield.js" defer async></script>
+    <script src="main/scripts/particles.js" defer async></script>
     <script src="main/scripts/chat.js" defer></script>
     <script src="main/scripts/script1.js" defer></script>
     <script src="main/scripts/script2.js" defer></script>
