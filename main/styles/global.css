@@ -6,10 +6,10 @@
     font-family: 'Open Sans', 'Arial', sans-serif;
 }
 
-/* Body with Yellow Background and Black Text */
-body {
-    background: #ffff00; /* Pure yellow background */
-    color: #000000; /* Black text */
+/* Force Yellow Background and Black Text */
+html, body {
+    background: #ffff00 !important;
+    color: #000000 !important;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
@@ -19,32 +19,18 @@ body {
 
 /* Links */
 a {
-    color: #000000; /* Black text for links */
+    color: #000000;
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #333333; /* Slightly darker gray for hover */
-    text-shadow: none; /* Remove neon shadow for clarity */
+    color: #333333;
 }
 
 /* Headings */
 h1, h2, h3 {
-    color: #000000; /* Black text for headings */
-    text-shadow: none; /* Remove neon shadow */
-}
-
-h1 {
-    font-size: clamp(2rem, 6vw, 3.5rem);
-}
-
-h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
-}
-
-h3 {
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #000000;
 }
 
 /* Paragraphs */
@@ -52,7 +38,7 @@ p {
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
 }
 
-/* Canvas for Background Effects (Starfield/Particles) */
+/* Canvas for Background Effects */
 canvas {
     position: fixed;
     top: 0;
@@ -61,6 +47,7 @@ canvas {
     height: 100%;
     z-index: -1;
     pointer-events: none;
+    background: transparent; /* Ensure canvas doesn’t override yellow */
 }
 
 /* Container Base Style */
@@ -69,9 +56,10 @@ canvas {
     width: 90%;
     margin: 0 auto;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.1); /* Slight white overlay for contrast */
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Subtle black shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    color: #000000;
 }
 
 /* Cursor Tracking Effect */
