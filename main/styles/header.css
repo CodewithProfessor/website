@@ -5,13 +5,12 @@
     left: 0;
     width: 100%;
     padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
+    background: #000000; /* Pure black background */
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 15px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); /* Black shadow for depth */
 }
 
 /* Logo Group */
@@ -20,32 +19,22 @@
     align-items: center;
     gap: 0.75rem;
     text-decoration: none;
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .logo-group:hover {
     transform: scale(1.05);
-    filter: brightness(1.2);
 }
 
 .logo-icon {
     width: clamp(2rem, 5vw, 2.5rem);
     height: clamp(2rem, 5vw, 2.5rem);
-    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.5));
-    animation: float 3s ease-in-out infinite;
 }
 
 .logo-text {
     font-size: clamp(1.2rem, 3vw, 1.5rem);
     font-weight: 700;
-    color: #00ffff;
-    text-shadow: 0 0 12px rgba(0, 255, 255, 0.8);
-}
-
-/* Float Animation */
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-0.5rem); }
+    color: #ffff00; /* Yellow text for contrast */
 }
 
 /* Navigation */
@@ -63,17 +52,15 @@ nav ul {
 }
 
 nav a {
-    color: #ffffff;
+    color: #ffff00; /* Yellow text for links */
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
-    text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
-    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
     position: relative;
 }
 
 nav a:hover {
-    color: #ff00ff;
+    color: #ffffff; /* White on hover for contrast */
     transform: translateY(-2px);
-    text-shadow: 0 0 15px rgba(255, 0, 255, 0.8);
 }
 
 nav a::after {
@@ -81,7 +68,7 @@ nav a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background: #ff00ff;
+    background: #ffffff;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
@@ -97,21 +84,39 @@ nav a:hover::after {
     display: none;
     background: none;
     border: none;
-    color: #00ffff;
+    color: #ffff00; /* Yellow for toggle */
     font-size: 1.5rem;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .menu-toggle:hover {
-    color: #ff00ff;
+    color: #ffffff;
     transform: rotate(90deg);
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    gap: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    color: #ffff00; /* Yellow text */
+}
+
+.contact-info a {
+    color: #ffff00;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ffffff;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {
         padding: 1rem;
+        flex-wrap: wrap;
     }
     .menu-toggle {
         display: block;
@@ -121,11 +126,11 @@ nav a:hover::after {
         flex-direction: column;
         position: absolute;
         top: 100%;
-        right: 1rem;
-        background: rgba(0, 0, 0, 0.9);
+        left: 0;
+        width: 100%;
+        background: #000000; /* Black background for mobile menu */
         padding: 1rem;
-        border-radius: 5px;
-        box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
     nav ul.show {
         display: flex;
@@ -134,11 +139,16 @@ nav a:hover::after {
         font-size: 1rem;
         padding: 0.5rem 0;
     }
+    .contact-info {
+        margin-top: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
     .logo-text {
-        display: none; /* Hide text on small screens for space */
+        display: none; /* Hide text on small screens */
     }
     .header {
         padding: 0.75rem;
