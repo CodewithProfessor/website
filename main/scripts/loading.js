@@ -1,5 +1,5 @@
 function Ticker(elem) {
-    elem.lettering(); // Split text into spans
+    elem.lettering();
     this.done = false;
     this.cycleCount = 5;
     this.cycleCurrent = 0;
