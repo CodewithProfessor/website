@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login/Signup Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="description" content="Signup or Login to Cosmic Tools - Access exclusive features and personalize your experience.">
+    <meta name="keywords" content="signup, login, Cosmic Tools, user account">
+    <meta name="author" content="CodewithProfessor">
+    <meta name="robots" content="index, follow">
+    <title>Signup/Login - Cosmic Tools</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" media="screen">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="main/styles/global.css" media="screen">
+    <link rel="stylesheet" href="main/styles/signup-login.css" media="screen">
+    <link rel="icon" href="main/assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="container">
         <div class="form-box login">
-            <form action="#">
+            <form action="#" method="post">
                 <h1>Login</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Username" required aria-label="Username">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                    <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="forgot-link">
                     <a href="#">Forgot Password?</a>
@@ -26,36 +33,36 @@
                 <button type="submit" class="btn">Login</button>
                 <p>or login with social platforms</p>
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-google' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#" aria-label="Login with Google"><i class='bx bxl-google'></i></a>
+                    <a href="#" aria-label="Login with Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" aria-label="Login with GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="Login with LinkedIn"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </form>
         </div>
 
         <div class="form-box register">
-            <form action="#">
+            <form action="#" method="post">
                 <h1>Registration</h1>
                 <div class="input-box">
-                    <input type="text" placeholder="Username" required>
+                    <input type="text" placeholder="Username" required aria-label="Username">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="email" placeholder="Email" required>
-                    <i class='bx bxs-envelope' ></i>
+                    <input type="email" placeholder="Email" required aria-label="Email">
+                    <i class='bx bxs-envelope'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class='bx bxs-lock-alt' ></i>
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                    <i class='bx bxs-lock-alt'></i>
                 </div>
                 <button type="submit" class="btn">Register</button>
                 <p>or register with social platforms</p>
                 <div class="social-icons">
-                    <a href="#"><i class='bx bxl-google' ></i></a>
-                    <a href="#"><i class='bx bxl-facebook' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
-                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#" aria-label="Register with Google"><i class='bx bxl-google'></i></a>
+                    <a href="#" aria-label="Register with Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" aria-label="Register with GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="#" aria-label="Register with LinkedIn"><i class='bx bxl-linkedin'></i></a>
                 </div>
             </form>
         </div>
@@ -66,7 +73,6 @@
                 <p>Don't have an account?</p>
                 <button class="btn register-btn">Register</button>
             </div>
-
             <div class="toggle-panel toggle-right">
                 <h1>Welcome Back!</h1>
                 <p>Already have an account?</p>
@@ -74,7 +80,6 @@
             </div>
         </div>
     </div>
-
-    <script src="main.js"></script>
+    <script src="main/scripts/signup-login.js" defer></script>
 </body>
 </html>
