@@ -1,20 +1,54 @@
-<section id="blogs" role="complementary">
-    <h2>Latest Blogs</h2>
-    <div class="blog-grid">
-        <div class="blog-box">
-            <h3>Mastering Unit Conversion</h3>
-            <p>Simplify measurements with our tool.</p>
-            <a href="../blogs.html" class="read-more">Read More</a>
-        </div>
-        <div class="blog-box">
-            <h3>Building a JS Calculator</h3>
-            <p>Step-by-step coding guide.</p>
-            <a href="../blogs.html" class="read-more">Read More</a>
-        </div>
-        <div class="blog-box">
-            <h3>Chatbot Integration Tips</h3>
-            <p>Enhance your site with AI.</p>
-            <a href="../blogs.html" class="read-more">Read More</a>
-        </div>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cosmic Tools Blog Central - Read insights, tutorials, and tips on tools, coding, and AI.">
+    <meta name="keywords" content="coding blogs, productivity tips, AI tutorials, Cosmic Tools, blog central">
+    <meta name="author" content="CodewithProfessor">
+    <meta name="robots" content="index, follow">
+    <title>Blog Central - Cosmic Tools</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" media="screen">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="main/styles/global.css" media="screen">
+    <link rel="stylesheet" href="main/styles/blogs.css" media="screen">
+    <link rel="icon" href="main/assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header"></div>
+    <main class="blogs-content" role="main">
+        <section id="blog-central">
+            <h1>Blog Central</h1>
+            <div class="blog-search">
+                <input type="text" id="blog-search" placeholder="Search blogs..." aria-label="Search blogs">
+                <select id="blog-filter" aria-label="Filter by category">
+                    <option value="all">All</option>
+                    <option value="tools">Tools</option>
+                    <option value="coding">Coding</option>
+                    <option value="ai">AI</option>
+                </select>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-box">
+                    <h2>Mastering Unit Conversion</h2>
+                    <p>Simplify measurements with our tool.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="blog-box">
+                    <h2>Building a JS Calculator</h2>
+                    <p>Step-by-step coding guide.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+                <div class="blog-box">
+                    <h2>Chatbot Integration Tips</h2>
+                    <p>Enhance your site with AI.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="main/scripts/loading.js" defer></script>
+    <script src="main/scripts/blogs.js" defer></script>
+</body>
+</html>
