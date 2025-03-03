@@ -3,38 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Galaxy Chat Bots - Revolutionize your conversations with AI-powered chatbots. Explore features and sign up today!">
-    <meta name="keywords" content="AI chatbots, Galaxy Chat Bots, artificial intelligence, chatbot solutions">
+    <meta name="description" content="Cosmic Tools - Your ultimate hub for productivity tools, coding projects, insightful blogs, and AI assistance with CosmoBot.">
+    <meta name="keywords" content="cosmic tools, productivity tools, unit converter, pdf tools, javascript projects, coding blogs, chatbot, AI assistance">
     <meta name="author" content="CodewithProfessor">
     <meta name="robots" content="index, follow">
-    <title>Galaxy Chat Bots - AI-Powered Chatbot Solutions</title>
+    <meta name="theme-color" content="#ffff00">
+    <title>Cosmic Tools - Tools, Projects, Blogs & AI Assistance</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet" media="screen">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="main/styles/global.css" media="screen">
-    <link rel="stylesheet" href="main/styles/loading.css" media="screen">
-    <link rel="stylesheet" href="main/styles/header.css" media="screen">
-    <link rel="stylesheet" href="main/styles/hero.css" media="screen">
-    <link rel="stylesheet" href="main/styles/chat.css" media="screen">
-    <link rel="stylesheet" href="main/styles/features.css" media="screen">
-    <link rel="stylesheet" href="main/styles/footer.css" media="screen">
-    <link rel="stylesheet" href="main/styles/forms.css" media="screen">
+    <link rel="icon" href="main/assets/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js" defer></script>
 </head>
 <body>
-    <div id="loading-screen" aria-label="Loading Galaxy Chat Bots"></div>
+    <div id="loading-screen" aria-label="Loading Cosmic Tools"></div>
     <main class="website-content" role="main">
         <div id="header"></div>
-        <div id="hero"></div>
-        <div id="chat"></div>
+        <section id="hero" role="banner">
+            <div class="hero-text">
+                <h1>Welcome to Cosmic Tools</h1>
+                <p>Your Ultimate Hub for Tools, Code, Blogs, and AI Assistance</p>
+                <div class="hero-buttons">
+                    <a href="tools.html" class="btn">Explore Tools Hub</a>
+                    <a href="projects.html" class="btn">Visit Projects Gallery</a>
+                    <a href="blogs.html" class="btn">Read Blog Central</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="main/assets/hero-cosmic.jpg" alt="Cosmic Tools Futuristic Illustration" loading="lazy">
+            </div>
+        </section>
         <div id="features"></div>
+        <div id="blogs"></div>
+        <div id="chat"></div>
         <div id="footer"></div>
-        <canvas id="starCanvas" aria-hidden="true"></canvas>
-        <canvas id="particleCanvas" aria-hidden="true"></canvas>
     </main>
-    <script src="main/scripts/starfield.js" defer></script>
-    <script src="main/scripts/particles.js" defer></script>
-    <script src="main/scripts/loading-ticker.js" defer></script>
     <script src="main/scripts/loading.js" defer></script>
 </body>
 </html>
